@@ -28,6 +28,8 @@ class Network(IntEnum):
     Cronos = 25
     Optimism = 10
     OptimismKovan = 69
+    Metis = 1088
+    Moonbeam = 1284
 
 MULTICALL_ADDRESSES: Dict[int,str] = {
     Network.Mainnet: '0xeefBa1e63905eF1D7ACbA5a8513c70307C1cE441',
@@ -43,6 +45,7 @@ MULTICALL_ADDRESSES: Dict[int,str] = {
     Network.Cronos: '0x5e954f5972EC6BFc7dECd75779F10d848230345F',
     Network.Optimism: '0x187C0F98FEF80E87880Db50241D40551eDd027Bf',
     Network.OptimismKovan: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
+    Network.Moonbeam: '0x83e3b61886770de2F64AAcaD2724ED4f08F7f36B'
 }
 
 MULTICALL2_ADDRESSES: Dict[int,str] = {
@@ -62,6 +65,8 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Cronos: '0x5e954f5972EC6BFc7dECd75779F10d848230345F',
     Network.Optimism: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.OptimismKovan: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
+    Network.Metis: '0x18fA376d92511Dd04090566AB6144847c03557d8',
+    Network.Moonbeam: '0x6477204E12A7236b9619385ea453F370aD897bb2'
 }
 
 # With default AsyncBaseProvider settings, some dense calls will fail
