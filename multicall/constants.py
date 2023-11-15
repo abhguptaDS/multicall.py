@@ -5,16 +5,7 @@ from typing import Dict
 
 from aiohttp import ClientTimeout
 
-# If brownie is installed and connected, we will use brownie's Web3
-# Otherwise, we will use w3 from web3py.
-try:
-    from brownie import network, web3  # type: ignore
-    if network.is_connected():
-        w3 = web3
-    else:
-        from web3.auto import w3
-except ImportError:
-    from web3.auto import w3
+from web3.auto import w3
 
 GAS_LIMIT: int = int(os.environ.get('GAS_LIMIT', 50_000_000))
 
@@ -104,7 +95,7 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Polygon: '0xc8E51042792d7405184DfCa245F2d27B94D013b6',
     Network.Bsc: '0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B',
     Network.Fantom: '0xBAD2B082e2212DE4B065F636CA4e5e0717623d18',
-    Network.Moonriver: '0xB44a9B6905aF7c801311e8F4E76932ee959c663C',
+    Network.Moonriver: '0xaeF00A0Cf402D9DEdd54092D9cA179Be6F9E5cE3',
     Network.Arbitrum: '0x842eC2c7D803033Edf55E478F461FC547Bc54EB2',
     Network.Avax: '0xdf2122931FEb939FB8Cf4e67Ea752D1125e18858',
     Network.Heco: '0xd1F3BE686D64e1EA33fcF64980b65847aA43D79C',
@@ -112,6 +103,8 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Cronos: '0x5e954f5972EC6BFc7dECd75779F10d848230345F',
     Network.Optimism: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.OptimismKovan: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
+    Network.Metis: '0x18fA376d92511Dd04090566AB6144847c03557d8',
+    Network.Moonbeam: '0x6477204E12A7236b9619385ea453F370aD897bb2'
     Network.Kava: '0x45be772faE4a9F31401dfF4738E5DC7DD439aC0b',
 }
 
