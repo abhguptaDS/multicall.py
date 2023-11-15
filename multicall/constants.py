@@ -39,6 +39,7 @@ class Network(IntEnum):
     Fantom = 250
     Boba = 288
     KCC = 321
+    ZkSync = 324
     OptimismGorli = 420
     Astar = 592
     Metis = 1088
@@ -136,6 +137,7 @@ MULTICALL3_ADDRESSES: Dict[int,str] = {
     Network.Fantom: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.Boba: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.KCC: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    Network.ZkSync: '0x47898B2C52C957663aE9AB46922dCec150a2272c',
     Network.OptimismGorli: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.Astar: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.Metis: '0xcA11bde05977b3631167028862bE2a173976CA11',
