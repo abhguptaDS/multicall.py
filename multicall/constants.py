@@ -43,6 +43,7 @@ class Network(IntEnum):
     OptimismGorli = 420
     Astar = 592
     Metis = 1088
+    PolygonZkEVM = 1101
     Moonbeam = 1284
     Moonriver = 1285
     MoonbaseAlphaTestnet = 1287
@@ -59,11 +60,13 @@ class Network(IntEnum):
     Oasis = 42262
     AvalancheFuji = 43113
     Avax = 43114
+    Linea = 59144
     GodwokenTestnet = 71401
     Godwoken = 71402
     Mumbai = 80001
     ArbitrumRinkeby = 421611
     ArbitrumGorli = 421613
+    Scroll = 534352
     Sepolia = 11155111
     Aurora = 1313161554
     Harmony = 1666600000
@@ -165,6 +168,10 @@ MULTICALL3_ADDRESSES: Dict[int,str] = {
     Network.Harmony: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.PulseChain: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.PulseChainTestnet: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    Network.Base: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    Network.PolygonZkEVM: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    Network.Scroll: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    Network.Linea: '0xcA11bde05977b3631167028862bE2a173976CA11',
     Network.Base: '0xcA11bde05977b3631167028862bE2a173976CA11',
 }
 
