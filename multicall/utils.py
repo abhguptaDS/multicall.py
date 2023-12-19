@@ -97,6 +97,6 @@ def state_override_supported(w3: Web3) -> bool:
         return False
     return True
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=4)
 def _get_semaphore() -> asyncio.Semaphore:
     return asyncio.Semaphore()
